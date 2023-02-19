@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+@media (max-width: 1000px){
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5% 0 0 0    
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+    .apresentacao__portrait {
+        min-width: 70%;
+    }
+}
+
+:root{
+    --cor-primaria: #373740;
+    --cor-secundaria: #C7BCA1;
+    --cor-terciaria: #927d48;
+    --cor-hover: #868071;
+
+    --fonte--kronaone: 'Krona One', 'sans-serif';
+    --fonte--montserrat: 'montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    /* height: 100vh; */
+    box-sizing: border-box;  
+}
+
+.cabecalho{
+    padding: 3% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 5rem;
+}
+
+.cabecalho__menu__link{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-family: var(--fonte--montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/*Página*/
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  7% 15%;
+    gap: 5rem;
+}
+/*Conteudo de títulos, textos e links*/
+.apresentacao__conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+/*Cor fonte do título*/ 
+.apresentacao__conteudo__destaque{
+    color: var(--cor-terciaria);  
+}
+
+/*título*/
+.apresentacao__conteudo__titulo{
+    font-size: 2rem;
+    font-family: var(--fonte--kronaone);
+}
+/*texto*/
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte--montserrat);
+}
+/*Flexbox links*/
+.apresentacao__conteudo__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+/*apresentação dos link para as paginas*/
+.apresentacao__links__texto{
+    font-family: var(--fonte--kronaone);
+    font-size: 1.5rem;
+    color: var(--cor-secundaria); 
+}
+
+/*Botões dos links*/
+.apresentacao__links__link{
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: var(--fonte--montserrat);
+    padding: 1rem 0;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*Hover do botões*/
+.apresentacao__links__link:hover{
+    background-color: var(--cor-hover);
+}
+/*Foto portrait*/
+.apresentacao__portrait{
+    max-width: 50%;
+    border-radius: 10px;
+    border-top: 3px solid gray;
+    border-right: 3px solid gray;
+    box-shadow: 1px 1px gray;
+}
+
+.rodape{
+    text-align: center;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 1rem;
+    font-family: var(--fonte--montserrat);
+    font-size: 1.5rem;
+}  
